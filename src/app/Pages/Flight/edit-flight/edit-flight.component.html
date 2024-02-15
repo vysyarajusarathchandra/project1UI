@@ -1,0 +1,68 @@
+<div class="container">
+    <table class="table table-bordered table-striped" style="width: 500px;">
+        <tr>
+            <td>
+                <label>Flight Number</label>
+            </td>
+            <td>
+                <input type="number" [(ngModel)]="flightNumber" class="form-control" required>
+            </td>
+            <td>
+                <button class="btn btn-primary" (click)="search()">Search</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <span style="color: red;">{{errMsg}}</span>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="table" *ngIf="isFlightExist">
+        <tr>
+            <td>FlightNumber</td>
+            <td>
+                <input type="number" [(ngModel)]="flight.flightNumber" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Airline Name</td>
+            <td>
+                <input type="text" [(ngModel)]="flight.airline" required>
+            </td>
+        </tr>
+       
+        <tr>
+            <td>Departure</td>
+            <td>
+                <input type="text" [(ngModel)]="flight.departure" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Departure Date and Time</td>
+            <td>
+                <input type="datetime-local" [(ngModel)]="flight.departureDateTime" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Arrival Date and Time</td>
+            <td>
+                <input type="datetime-local" [(ngModel)]="flight.arrivalDateTime" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Ticket Price</td>
+            <td>
+                <input type="number" [(ngModel)]="flight.ticketPrice" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-primary" (click)="edit()">Edit</button> &nbsp;
+            </td>
+        </tr>
+ 
+    </table>
+    <!-- <a href="/admin-dashboard" class="dashboard-link">Go Back to Dashboard</a> -->
+</div>

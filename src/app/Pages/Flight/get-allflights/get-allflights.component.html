@@ -1,0 +1,43 @@
+<!-- Update your component's HTML file (e.g., get-all-books.component.html) -->
+
+<div class="container">
+    <div class="search-bar">
+      <input id="Title" [(ngModel)]="Airline" placeholder="Search flights" />
+      <button (click)="searchFlightByName()">Search</button>
+    </div>
+      <div class="tile" *ngFor="let Flight of flights">
+        <h1>{{ Flight.Flight}}</h1>
+        <table>
+          <tr>
+            <th>airlineName:</th>
+            <td>{{ Flight.airline }}</td>
+          </tr>
+          <tr>
+            <th>departureAirport:</th>
+            <td>{{Flight.departure}}</td>
+          </tr>
+          <tr>
+            <th>arrivalAirport:</th>
+            <td>{{ Flight.arrival }}</td>
+          </tr>
+          <tr>
+            <th>departureDateAndTime:</th>
+            <td>{{ Flight.departureDateTime }}</td>
+          </tr>
+          <tr>
+            <th>ArrivalDateAndTime:</th>
+            <td>{{ Flight.arrivalDateTime }}</td>
+          </tr>
+          <tr>
+            <th>TicketPrice:</th>
+            <td>{{ Flight.ticketPrice }}</td>
+          </tr>
+
+        </table>
+        <div *ngIf="isEligible">
+            <button class="btn " (click)="delete(Flight.flightNumber)">Delete</button>&nbsp;
+            <button class="btn " (click)=" EditFlight(Flight.flightNumber)">Edit</button>
+        </div>
+      </div>
+    </div>
+    

@@ -1,0 +1,39 @@
+<div class="container">
+    <h3>Add Flight</h3>
+    <table class="table">
+        <tr>
+            <td>Airline</td>
+            <td>
+                <input type="text" [(ngModel)]="Flights.airline" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>DepartureAirpot</td>
+            <td>
+                <input type="text" [(ngModel)]="Flights.departure" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>ArrivalAirport</td>
+            <td>
+                <input type="text" [(ngModel)]="Flights.arrival" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>DepartureDateAndTime</td>
+            <td>
+                <input type="text" [(ngModel)]="Flights.departureDateTime" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>ArrivalDateAndTime</td>
+            <td>
+                <input type="text" [(ngModel)]="Flights.arrivalDateTime" class="form-control">
+            </td>
+        </tr>
+        <button class="btn btn-primary" (click)="AddFlight()">Add</button>
+        
+       
+    </table>
+</div>
+

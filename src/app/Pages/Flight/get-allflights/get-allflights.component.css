@@ -1,0 +1,67 @@
+.container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tile {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tile h1 {
+    margin-top: 0;
+  }
+  
+  .tile table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tile th, .tile td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tile th {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .tile .btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tile .btn:hover {
+    background-color: #0056b3;
+  }
+  
